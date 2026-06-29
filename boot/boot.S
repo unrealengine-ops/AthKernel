@@ -1,11 +1,9 @@
-.section .text
+.section .text.boot
 .global _start
 
 .extern kernel_main
 
 _start:
-
-    // Call the C++ kernel
     bl kernel_main
 
 1:
