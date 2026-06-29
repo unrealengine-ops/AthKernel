@@ -1,16 +1,11 @@
-#include "../include/kernel.hpp"
+#include "../arch/aarch64/cpu.hpp"
 
 namespace AthKernel
 {
 
 void Initialize()
 {
-    // Kernel starts here.
-
-    while (true)
-    {
-        asm volatile("wfe");
-    }
+    CPU::Halt();
 }
 
 }
